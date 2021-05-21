@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
     <title>(@kim.kardashian) | Fotos y vídeos...</title>
     <style>
       * {
@@ -57,7 +60,7 @@
       }
       .dos_item1 {
         width: 100%;
-        height: 15%;
+        height: 20%;
       }
       .dos_item1 h2 {
         text-align: left;
@@ -93,7 +96,7 @@
       }
       .tres {
         width: 100%;
-        height: 70%;
+        height: 65%;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -160,10 +163,11 @@
         background-position: center center;
         background-image: url(https://static.independent.co.uk/2020/09/28/21/newFile-3.jpg?width=982&height=726&auto=webp&quality=75);
       }
+      /*
       aside:hover {
         cursor: pointer;
         filter: contrast(30%);
-      }
+      }*/
 
       @media screen and (max-width: 500px) {
         main {
@@ -210,13 +214,19 @@
       .man {
         filter: blur(10px);
       }
+      .foto {
+        width: 100vw;
+        height: 90vh;
+        position: absolute;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
     <main id="main">
       <header>
         <div class="uno">
-          <div class="uno_item"></div>
+          <div class="uno_item" title="Profile-user"></div>
         </div>
         <div class="dos">
           <div class="dos_item1">
@@ -261,6 +271,52 @@
             "Eres menor para seguir esta cuenta, desde ahora tu acceso a este perfil estará bloqueado"
           );
         }
+      });
+
+      //zoom a las imagénes
+      var zoom = document.querySelector(".a");
+      zoom.addEventListener("click", () => {
+        zoom.classList.toggle("foto");
+      });
+      //2
+      var zooma = document.querySelector(".b");
+      zooma.addEventListener("click", () => {
+        zooma.classList.toggle("foto");
+      });
+      //3
+      var zoome = document.querySelector(".c");
+      zoome.addEventListener("click", () => {
+        zoome.classList.toggle("foto");
+      });
+      //4
+      var zoomes = document.querySelector(".d");
+      zoomes.addEventListener("click", () => {
+        zoomes.classList.toggle("foto");
+      });
+      //5
+      var zoomer = document.querySelector(".e");
+      zoomer.addEventListener("click", () => {
+        zoomer.classList.toggle("foto");
+      });
+      //6
+      var zoomed = document.querySelector(".f");
+      zoomed.addEventListener("click", () => {
+        zoomed.classList.toggle("foto");
+      });
+      //7
+      var zoomef = document.querySelector(".g");
+      zoomef.addEventListener("click", () => {
+        zoomef.classList.toggle("foto");
+      });
+      //8
+      var zoomeh = document.querySelector(".h");
+      zoomeh.addEventListener("click", () => {
+        zoomeh.classList.toggle("foto");
+      });
+      //9
+      var zoomen = document.querySelector(".i");
+      zoomen.addEventListener("click", () => {
+        zoomen.classList.toggle("foto");
       });
     </script>
   </body>
