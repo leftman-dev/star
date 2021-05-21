@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+    <title>(@kim.kardashian) | Fotos y vídeos...</title>
+    <style>
+      * {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        font-family: "segoe ui", consolas;
+        box-sizing: border-box;
+        text-align: center;
+        border: 0;
+        outline: none;
+        cursor: context-menu;
+      }
+      ::selection {
+        color: rgba(255, 255, 255, 0.979);
+        background: orange;
+      }
+      main {
+        height: 1400px;
+        margin: 0 auto;
+
+        width: 70%;
+      }
+      header {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+      }
+      .uno {
+        width: 25%;
+        height: 100%;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+      }
+      .uno_item {
+        width: 70%;
+        height: 60%;
+        border: 3px solid rgb(189, 43, 128);
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://ep01.epimg.net/elpais/imagenes/2019/04/11/gente/1554969343_074452_1554970402_noticia_normal.jpg);
+      }
+      .dos {
+        width: 75%;
+        height: 100%;
+      }
+      .dos_item1 {
+        width: 100%;
+        height: 15%;
+      }
+      .dos_item1 h2 {
+        text-align: left;
+        padding: 5px 15px;
+        font-weight: 100;
+        display: inline-block;
+        width: 40%;
+      }
+      .dos_item1 button {
+        display: inline-block;
+        width: 90px;
+
+        height: 30px;
+        border-radius: 5px;
+        background: rgb(34, 100, 241);
+        color: white;
+      }
+      button:active {
+        position: relative;
+        top: 4px;
+      }
+      .dos_item2 {
+        width: 100%;
+        height: 15%;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+      }
+      .dos_item2 span {
+        margin-right: 20px;
+      }
+      .tres {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+      }
+      .tres p {
+        text-align: left;
+        padding: 5px 65px;
+        font-size: 1.1rem;
+        color: gray;
+      }
+      section {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+      }
+      aside {
+        width: 30%;
+        height: 25%;
+      }
+      .a {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://static1.abc.es/media/estilo/2020/10/21/kim-k-k4aE--620x349@abc.jpg);
+      }
+      .b {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://as.com/tikitakas/imagenes/2019/09/26/portada/1569455894_392432_1569455998_noticia_normal.jpg);
+      }
+      .c {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://ichef.bbci.co.uk/news/640/cpsprodpb/5647/production/_113578022_hi062572303.jpg);
+      }
+      .d {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://www.mundodeportivo.com/r/GODO/MD/p7/MasQueDeporte/Imagenes/2020/07/16/Recortada/20200705-637295420270805346_20200705104000-kQOG-U482332639727D6F-980x554@MundoDeportivo-Web.jpg);
+      }
+      .e {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://aws.revistavanityfair.es/prod/designs/v1/assets/785x589/213113.jpg);
+      }
+      .f {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://estaticos-cdn.sport.es/clip/fdfcc60e-73ee-4632-a0ae-ca9fe360cfa1_media-libre-aspect-ratio_default_0.jpg);
+      }
+      .g {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://dam.vanidades.com/wp-content/uploads/2020/01/Kim-Kardashian-y-Kanye-West-150.jpg);
+      }
+      .h {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/05/19/16214218695651.jpg);
+      }
+      .i {
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://static.independent.co.uk/2020/09/28/21/newFile-3.jpg?width=982&height=726&auto=webp&quality=75);
+      }
+      aside:hover {
+        cursor: pointer;
+        filter: contrast(30%);
+      }
+
+      @media screen and (max-width: 500px) {
+        main {
+          height: 1900px;
+          width: 90%;
+        }
+        header {
+          height: 40%;
+        }
+        .uno {
+          width: 100%;
+          height: 50%;
+        }
+        .dos {
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-content: center;
+        }
+        .dos_item1,
+        .dos_item2 {
+          width: 100%;
+          height: 20%;
+        }
+        .dos_item1 h2,
+        .dos_item1 button {
+          padding: 0;
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .tres {
+          height: 60%;
+        }
+        aside {
+          width: 45%;
+          height: 19%;
+        }
+      }
+
+      .man {
+        filter: blur(10px);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <div class="uno">
+          <div class="uno_item"></div>
+        </div>
+        <div class="dos">
+          <div class="dos_item1">
+            <h2>Kim.Kardashian</h2>
+            <button id="bn">Seguir</button>
+          </div>
+          <div class="dos_item2">
+            <span> <b>1507</b> publicaciones </span>
+            <span> <b>222m</b> seguidores </span>
+            <span> <b>349</b> seguidos</span>
+          </div>
+          <div class="tres">
+            <p>Kim K | Socialité | Entreprenur</p>
+            <p>KIM SPACE | 2021</p>
+            <p>Kardashians.com</p>
+          </div>
+        </div>
+      </header>
+      <section>
+        <aside class="a"></aside>
+        <aside class="b"></aside>
+        <aside class="c"></aside>
+        <aside class="d"></aside>
+        <aside class="e"></aside>
+        <aside class="f"></aside>
+        <aside class="g"></aside>
+        <aside class="h"></aside>
+        <aside class="i"></aside>
+      </section>
+    </main>
+    <script>
+      var a = document.getElementById("bn");
+      a.addEventListener("click", () => {
+        var b = prompt("¿Que edad tienes?", "ejemplo: 20");
+        if (b >= 18) {
+          alert("Desde ahora sigues a esta cuenta");
+        } else {
+          var c = document.getElementById("main");
+          c.classList.add("man");
+
+          alert(
+            "Eres menor para seguir esta cuenta, desde ahora tu acceso a este perfil estará bloqueado"
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
